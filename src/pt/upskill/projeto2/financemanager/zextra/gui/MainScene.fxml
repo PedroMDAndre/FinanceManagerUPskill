@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vBoxMain" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.upskill.projeto2.financemanager.zextra.Controller">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleFileLoad" text="Load Accounts" />
+            <MenuItem mnemonicParsing="false" onAction="#handleFileSave" text="Save Accounts" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#handleFileQuit" text="Quit" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="General">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleGeneralGlobalPosition" text="Global Position" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleGeneralAccountStatement" text="Account Statement" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleGeneralListCategories" text="List Categories" />
+              </items>
+            </Menu>
+        <Menu mnemonicParsing="false" text="Analyze">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAnalyzeMonthlySummary" text="Monthly Summary" />
+            <MenuItem mnemonicParsing="false" onAction="#handleAnalyzeDraftPredictionCategory" text="Draft Prediction per Category" />
+            <MenuItem mnemonicParsing="false" onAction="#handleAnalyzeAnnualInterest" text="Annual Interest" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#loadAboutMsg" text="About Finance Manager" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="mainPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+  </children>
+</VBox>

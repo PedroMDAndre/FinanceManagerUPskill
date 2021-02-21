@@ -1,0 +1,10 @@
+Statement - 16-02-2014
+
+Account ;1234567890990 ;EUR ;NOVA ;DraftAccount
+Starting date ;01-02-2014
+Ending Date ;16-02-2014
+
+Date ;Value Date ;Description ;Draft ;Credit ;Accounting balance ;Available balance 
+02-01-2014;02-01-2014;TRANSF ;;300;3500.00;3500.00
+04-01-2014;04-01-2014;TRANSF ;;200;3700.00;3700.00
+01-02-2014;01-02-2014;TRANSF ;;100;3800.00;3800.00
